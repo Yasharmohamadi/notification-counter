@@ -45,20 +45,32 @@ export default class Menu extends React.Component {
 		// 	);
 		// }
 		//////////////////////////////////////////////////////////////////////////////////
-		let newsCount = null
-		if (this.state.nofifications.length !== 0) {
-		    newsCount = <p className="news__number">{this.state.nofifications.length}</p>
-		}
+		// let newsCount = null
+		// if (this.state.nofifications.length !== 0) {
+		//     newsCount = <p className="news__number">{this.state.nofifications.length}</p>
+		// }
 
+		// return (
+		//     <div className="container">
+		//         <h1 className="title">React</h1>
+		//         <div className="news">
+		//             <h4 className="news__text">News</h4>
+		//             {newsCount}
+		//         </div>
+		//     </div>
+		// );
+		//////////////////////////////////////////////////////////////////////////////////
 		return (
-		    <div className="container">
-		        <h1 className="title">React</h1>
-		        <div className="news">
-		            <h4 className="news__text">News</h4>
-		            {newsCount}
-		        </div>
-		    </div>
+			<div className="container">
+				<h1 className="title">React</h1>
+				<div className="news">
+					<h4 className="news__text">News</h4>
+					{this.state.nofifications.length !== 0 && (
+						<p className="news__number">{this.state.nofifications.length}</p>
+					)}
+				</div>
+			</div>
 		);
-
+		
 	}
 }
