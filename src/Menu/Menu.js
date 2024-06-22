@@ -22,6 +22,7 @@ export default class Menu extends React.Component {
 	}
 
 	render() {
+		//////////////////////////////////////  1  /////////////////////////////////////////
 		// if (this.state.nofifications.length === 0) {
 		// 	console.log("خبری نیست");
 		// 	return (
@@ -44,7 +45,7 @@ export default class Menu extends React.Component {
 		// 		</div>
 		// 	);
 		// }
-		//////////////////////////////////////////////////////////////////////////////////
+		//////////////////////////////////////////  2  ///////////////////////////////////
 		// let newsCount = null
 		// if (this.state.nofifications.length !== 0) {
 		//     newsCount = <p className="news__number">{this.state.nofifications.length}</p>
@@ -59,7 +60,19 @@ export default class Menu extends React.Component {
 		//         </div>
 		//     </div>
 		// );
-		//////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////  3  ///////////////////////////////////
+		// return (
+		// 	<div className="container">
+		// 		<h1 className="title">React</h1>
+		// 		<div className="news">
+		// 			<h4 className="news__text">News</h4>
+		// 			{this.state.nofifications.length !== 0 && (
+		// 				<p className="news__number">{this.state.nofifications.length}</p>
+		// 			)}
+		// 		</div>
+		// 	</div>
+		// );
+		////////////////////////////////////////  4  /////////////////////////////////////
 		return (
 			<div className="container">
 				<h1 className="title">React</h1>
@@ -71,6 +84,5 @@ export default class Menu extends React.Component {
 				</div>
 			</div>
 		);
-		
 	}
 }
