@@ -17,12 +17,15 @@ export default class Menu extends React.Component {
 				"New",
 				"New",
 				"New",
+				"New",
+				"New",
+				"New",
 			],
 		};
 	}
 
 	render() {
-		//////////////////////////////////////  1  /////////////////////////////////////////
+		/////////////////////////////////////////  1  ////////////////////////////////////
 		// if (this.state.nofifications.length === 0) {
 		// 	console.log("خبری نیست");
 		// 	return (
@@ -50,7 +53,6 @@ export default class Menu extends React.Component {
 		// if (this.state.nofifications.length !== 0) {
 		//     newsCount = <p className="news__number">{this.state.nofifications.length}</p>
 		// }
-
 		// return (
 		//     <div className="container">
 		//         <h1 className="title">React</h1>
@@ -73,14 +75,24 @@ export default class Menu extends React.Component {
 		// 	</div>
 		// );
 		////////////////////////////////////////  4  /////////////////////////////////////
+		// return (
+		// 	<div className="container">
+		// 		<h1 className="title">React</h1>
+		// 		<div className="news">
+		// 			<h4 className="news__text">News</h4>
+		// 			{this.state.nofifications.length !== 0 && (
+		// 				<p className="news__number">{this.state.nofifications.length}</p>
+		// 			)}
+		// 		</div>
+		// 	</div>
+		// );
+		////////////////////////////////////////  5  /////////////////////////////////////
 		return (
 			<div className="container">
 				<h1 className="title">React</h1>
 				<div className="news">
 					<h4 className="news__text">News</h4>
-					{this.state.nofifications.length !== 0 && (
-						<p className="news__number">{this.state.nofifications.length}</p>
-					)}
+					{this.state.nofifications.length !== 0 ? (<p className="news__number">{this.state.nofifications.length}</p>) : false}
 				</div>
 			</div>
 		);
