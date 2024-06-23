@@ -92,7 +92,11 @@ export default class Menu extends React.Component {
 				<h1 className="title">React</h1>
 				<div className="news">
 					<h4 className="news__text">News</h4>
-					{this.state.nofifications.length !== 0 ? (<p className="news__number">{this.state.nofifications.length}</p>) : false}
+					{this.state.nofifications.length !== 0 ? (
+						<p className="news__number">{this.state.nofifications.length}</p>
+					) : (
+						false
+					)}
 				</div>
 			</div>
 		);
